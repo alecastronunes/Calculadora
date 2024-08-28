@@ -1,0 +1,134 @@
+/* Resetando a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #997CF7;
+}
+
+.container {
+    display: flex;
+    width: 300px;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0D0231;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px #574491;
+}
+
+#resultado {
+    color: #fff;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container table {
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+}
+
+.container table tr td {
+    width: 25%;
+    text-align: center;
+}
+
+.container table tr td button {
+    border: none;
+    padding: 10px;
+    background-color: #1e114b;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container table tr td button:hover {
+    background-color: #ab85f6;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+#operatorEqual {
+    background-color: #6236F5;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#operatorMult {
+    background-color: #6236F5;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#operatorDiv {
+    background-color: #6236F5;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#operatorLess {
+    background-color: #6236F5;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#operatorPlus {
+    background-color: #6236F5;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#reset {
+    background-color: #ab85f6;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#arrow {
+    font-size: 30px;
+    background-color: #ab85f6;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#zero {
+    width: 120px;
+}
+
+#point {
+    width: 120px;
+
+}
+
+img {
+    width: 20px;
+    margin-bottom: 6px;
+    color: #fff;
+}

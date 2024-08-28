@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Google fonts -->
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <span id="resultado">0</span>
+        <table>
+            <tr>
+                <td><button id="reset" onclick="limpar()">C</button></td>
+                <td><button id="arrow" onclick="apagar()"><svg xmlns="http://www.w3.org/2000/svg" height="33px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
+                        </svg></button>
+                </td>
+                <td><button id="operatorPlus" onclick="input('+')">+</button></td>
+                <td><button id="operatorLess" onclick="input('-')">-</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="input('7')">7</button></td>
+                <td><button onclick="input('8')">8</button></td>
+                <td><button onclick="input('9')">9</button></td>
+                <td><button id="operatorDiv" onclick="input('/')">/</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="input('4')">4</button></td>
+                <td><button onclick="input('5')">5</button></td>
+                <td><button onclick="input('6')">6</button></td>
+                <td><button id="operatorMult" onclick="input('*')">X</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="input('1')">1</button></td>
+                <td><button onclick="input('2')">2</button></td>
+                <td><button onclick="input('3')">3</button></td>
+                <td><button id="operatorEqual" onclick="calcular()">=</button></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><button id="zero" onclick="input('0')">0</button></td>
+                <td colspan="2"> <button id="point" onclick="input('.')">.</button></td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
